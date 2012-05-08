@@ -22,8 +22,7 @@ public class EchoesJava
 {
   private static PedagogicComponent pedComponent = new PedagogicComponent();
   private static RenderingEngine renderEng = new RenderingEngine();
-  private static StateManager stateMgr = new StateManager();
-  private static ActionEngine actionEngine = new ActionEngine(stateMgr, renderEng);
+ 
   private static ChildModel childModel = new ChildModel();
   private static SceneAndActivitiesMonitor sam = new SceneAndActivitiesMonitor(pedComponent, actionEngine, renderEng);
   private static SceneAndObjectDirector sod = new SceneAndObjectDirector(renderEng, sam);
